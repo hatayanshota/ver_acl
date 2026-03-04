@@ -1,0 +1,23 @@
+{
+  "name": "ver-acl",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "bun run next dev",
+    "build": "bun run next build",
+    "start_old": "bun .next/standalone/server.js",
+    "start": "bun run next start",
+    "zip": "bun run build && zip -r ACL検証.zip .next .manifest.json package.json"
+  },
+  "dependencies": {
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}
