@@ -5,9 +5,8 @@
   "scripts": {
     "dev": "bun run next dev",
     "build": "bun run next build",
-    "start_old": "bun .next/standalone/server.js",
     "start": "bun run next start",
-    "zip": "bun run build && zip -r ACL検証.zip .next .manifest.json package.json"
+    "zip": "zip -r ACL検証.zip . -x \"node_modules/*\" \".next/*\" \".git/*\" \".claude/*\" \"*.zip\""
   },
   "dependencies": {
     "next": "16.1.1",
